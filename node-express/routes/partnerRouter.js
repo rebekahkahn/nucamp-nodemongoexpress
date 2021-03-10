@@ -33,16 +33,12 @@ partnerRouter
   })
 
   .get((req, res) => {
-    res.end(
-      `Will send details of the campsite: ${req.params.partnerId} to you`
-    );
+    res.end(`Will send details of the partner: ${req.params.partnerId} to you`);
   })
 
   .post((req, res) => {
     res.statusCode = 403;
-    res.end(
-      `POST operation not supported on /campsite/${req.params.partnerId}`
-    );
+    res.end(`POST operation not supported on /partner/${req.params.partnerId}`);
   })
 
   .put((req, res) => {
