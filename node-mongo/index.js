@@ -11,6 +11,11 @@ MongoClient.connect(url, { useUnifiedTopology: true }, (err, client) => {
 
   const db = client.db(dbname);
 
+  db.dropCollection("campsites", (err, result) => {
+    assert.strictEqual(err, null);
+    console.log("Dropped Collection", result);
+  });
+
   assert.strictEqual(err, null);
 
   const collection = db.collection("campsites");
