@@ -1,5 +1,6 @@
 #dependencies
 node_modules
+bin
 
 #misc
 .DS_Store
