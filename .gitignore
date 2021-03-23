@@ -1,6 +1,7 @@
 # dependencies
 /node_modules
 /mongodb
+/bin
 
 # misc
 .DS_Store
